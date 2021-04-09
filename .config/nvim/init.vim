@@ -20,6 +20,9 @@ filetype on "detect files based on type
 filetype plugin on "when a file is edited its plugin file is loaded
 filetype indent on "maintain indentention
 set nu "enable line numbers
+set relativenumber "relative line numbers
+set colorcolumn=100 "display a colored column at 100 chars
+highlight ColorColumn ctermbg=0 guibg=morning
 
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
