@@ -1,0 +1,11 @@
+# Background opacity
+background_opacity: 0.9
+
+font:
+#   normal:
+#      family: " GoMono Nerd Font" 
+#   bold:
+#      family: "Noto Color Emoji" 
+#   italic:
+#      family: "Noto Color Emoji" 
+   size: 8
