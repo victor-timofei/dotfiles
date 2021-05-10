@@ -135,7 +135,6 @@ export PATH="/home/vtimofei/go/src/k8s.io/kubernetes/third_party/etcd:${PATH}"
 export K8S_PATH="$k8s_working_dir/kubernetes"
 
 alias slack="slack </dev/null &>/dev/null &"
-alias teams="teams </dev/null &>/dev/null &"
 alias chrome="google-chrome-stable </dev/null &>/dev/null &"
 
 alias ll="ls -al"
