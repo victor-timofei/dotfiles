@@ -14,6 +14,11 @@ set t_Co=256 "required for urxvt
 set background=dark "dark or light
 colorscheme PaperColor
 
+" Clear the background in order to have opacity
+hi Normal guibg=NONE ctermbg=NONE
+hi clear SignColumn
+hi clear LineNr
+
 " settings
 "
 filetype on "detect files based on type
