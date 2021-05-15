@@ -122,6 +122,16 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 bindkey -v
 export KEYTIMEOUT=1
 
+# Use vim keys in tab completion
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'left' vi-backward-char
+bindkey -M menuselect 'down' vi-down-line-or-history
+bindkey -M menuselect 'up' vi-up-line-or-history
+bindkey -M menuselect 'right' vi-forward-char
+
 # my executables
 export PATH=/home/vtimofei/scripts:$PATH
 export PATH=/home/vtimofei/bin:$PATH
