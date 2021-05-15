@@ -134,10 +134,9 @@ export user="victor-timofei"
 export PATH="/home/vtimofei/go/src/k8s.io/kubernetes/third_party/etcd:${PATH}"
 export K8S_PATH="$k8s_working_dir/kubernetes"
 
-alias slack="slack </dev/null &>/dev/null &"
 alias chrome="google-chrome-stable </dev/null &>/dev/null &"
 
-alias ll="ls -al"
+alias ll="ls -ahl"
 
 # Disable powerlevel prompt for using neofetch
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
