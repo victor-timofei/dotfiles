@@ -2,6 +2,11 @@
 "
 call plug#begin('~/.vim/plugged')
 
+Plug 'itchyny/lightline.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+Plug 'tpope/vim-fugitive'
+
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
@@ -12,7 +17,20 @@ call plug#end()
 "
 set t_Co=256 "required for urxvt
 set background=dark "dark or light
-colorscheme PaperColor
+" colorscheme PaperColor
+
+let g:lightline = {
+	\ 'colorscheme': 'onehalfdark',
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'gitbranch': 'FugitiveHead'
+	\ },
+	\ }
+" Hide insert(redundant because of lightline plugin)
+set noshowmode
 
 " Clear the background in order to have opacity
 hi Normal guibg=NONE ctermbg=NONE
