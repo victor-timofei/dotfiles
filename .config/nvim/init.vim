@@ -20,6 +20,11 @@ Plug 'neoclide/coc-tsserver'
 " treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()
 
 " colors
@@ -101,6 +106,16 @@ EOF
 " Folding
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+
+" -------------------------------------------------------------------------------------------------
+"  telescope keymaps
+"
+" -------------------------------------------------------------------------------------------------
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
