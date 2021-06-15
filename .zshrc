@@ -135,6 +135,7 @@ bindkey -M menuselect 'right' vi-forward-char
 # my executables
 export PATH=/home/vtimofei/scripts:$PATH
 export PATH=/home/vtimofei/bin:$PATH
+export PATH=/home/vtimofei/.local/bin:$PATH
 
 # go env
 export PATH=$PATH:/usr/local/go/bin
