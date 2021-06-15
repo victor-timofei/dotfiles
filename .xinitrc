@@ -37,6 +37,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+xset -dpms         # disable DPMS (Energy Star) features.
+xset s noblank     # don't blank the video device
+
 # Try to use the same scaling as my 4K monitor on my 768 laptop monitor
 xrandr --dpi 150 \
 	--output eDP1 --scale 1.5x1.5
@@ -46,6 +49,9 @@ nitrogen  --restore &
 
 # Start the compositor
 picom &
+
+# Start xscreensaver
+xscreensaver --no-splash &
 
 # Export some paths here that need to be picked up by
 # the dmenu
