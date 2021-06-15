@@ -151,6 +151,7 @@ export K8S_PATH="$k8s_working_dir/kubernetes"
 
 alias chrome="google-chrome-stable </dev/null &>/dev/null &"
 
+alias ls="exa"
 alias ll="ls -ahl"
 
 # Disable powerlevel prompt for using neofetch
