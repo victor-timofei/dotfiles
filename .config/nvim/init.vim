@@ -118,6 +118,14 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " -------------------------------------------------------------------------------------------------
+" System clipboard keybinds (requires xclip on Linux systems to work)
+"
+" -------------------------------------------------------------------------------------------------
+
+nnoremap <leader>P "+p
+nnoremap <leader>Y "+yy
+
+" -------------------------------------------------------------------------------------------------
 " coc.nvim scroll popup definition
 "
 " -------------------------------------------------------------------------------------------------
