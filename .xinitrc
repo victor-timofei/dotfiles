@@ -53,6 +53,9 @@ picom &
 # Start xscreensaver
 xscreensaver --no-splash &
 
+# Start dwmblocks
+dwmblocks &
+
 # Export some paths here that need to be picked up by
 # the dmenu
 export PATH=/snap/bin:$PATH
