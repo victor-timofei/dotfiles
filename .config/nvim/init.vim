@@ -11,6 +11,19 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
+" polyglot
+Plug 'sheerun/vim-polyglot'
+
+" Typescript lsp
+Plug 'neoclide/coc-tsserver'
+
+" treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" FZF integration with vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " colors
@@ -46,6 +59,52 @@ set nu "enable line numbers
 set relativenumber "relative line numbers
 set colorcolumn=100 "display a colored column at 100 chars
 highlight ColorColumn ctermbg=0 guibg=morning
+
+" -------------------------------------------------------------------------------------------------
+"  treesitter settings
+"
+" -------------------------------------------------------------------------------------------------
+
+" Syntax highlighting
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    custom_captures = {
+      -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+      ["foo.bar"] = "Identifier",
+    },
+  },
+}
+EOF
+
+" Incrementals selection
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+}
+EOF
+
+" Indentation
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  indent = {
+    enable = true
+  }
+}
+EOF
+
+" Folding
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
