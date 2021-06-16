@@ -48,7 +48,8 @@ xrandr --dpi 150 \
 nitrogen  --restore &
 
 # Start the compositor
-picom &
+# picom fork https://github.com/yshui/picom
+picom --corner-radius 20 &
 
 # Start xscreensaver
 xscreensaver --no-splash &
