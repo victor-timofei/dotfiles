@@ -31,7 +31,7 @@ call plug#end()
 "
 set t_Co=256 "required for urxvt
 set background=dark "dark or light
-" colorscheme PaperColor
+colorscheme PaperColor
 
 let g:lightline = {
 	\ 'colorscheme': 'onehalfdark',
@@ -47,9 +47,9 @@ let g:lightline = {
 set noshowmode
 
 " Clear the background in order to have opacity
-hi Normal guibg=NONE ctermbg=NONE
-hi clear SignColumn
-hi clear LineNr
+" hi Normal guibg=NONE ctermbg=NONE
+" hi clear SignColumn
+" hi clear LineNr
 
 " settings
 "
