@@ -47,9 +47,9 @@ let g:lightline = {
 set noshowmode
 
 " Clear the background in order to have opacity
-" hi Normal guibg=NONE ctermbg=NONE
-" hi clear SignColumn
-" hi clear LineNr
+hi Normal guibg=NONE ctermbg=NONE
+hi clear SignColumn
+hi clear LineNr
 
 " settings
 "
