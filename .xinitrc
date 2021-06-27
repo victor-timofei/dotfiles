@@ -48,8 +48,8 @@ xrandr --dpi 150 \
 nitrogen  --restore &
 
 # Start the compositor
-# picom fork https://github.com/yshui/picom
- picom --experimental-backends &
+# picom fork https://aur.archlinux.org/packages/picom-ibhagwan-git/
+picom --experimental-backends &
 
 # Start xscreensaver
 xscreensaver --no-splash &
