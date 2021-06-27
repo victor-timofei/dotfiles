@@ -49,7 +49,7 @@ nitrogen  --restore &
 
 # Start the compositor
 # picom fork https://github.com/yshui/picom
-# picom --corner-radius 20 &
+ picom --experimental-backends &
 
 # Start xscreensaver
 xscreensaver --no-splash &
