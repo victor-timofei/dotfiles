@@ -59,7 +59,6 @@ dwmblocks &
 
 # Export some paths here that need to be picked up by
 # the dmenu
-export PATH=/snap/bin:$PATH
 export PATH=$PATH:/home/vtimofei/firefox
 
 # Finally exec my window manager
