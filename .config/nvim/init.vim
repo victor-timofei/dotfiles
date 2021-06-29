@@ -27,6 +27,9 @@ Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 " colors
 "
 set t_Co=256 "required for urxvt
