@@ -134,8 +134,8 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "
 " -------------------------------------------------------------------------------------------------
 
-nnoremap <leader>P "+p
-nnoremap <leader>Y "+yy
+nnoremap <leader>p "+p
+nnoremap <leader>y "+yy
 
 " -------------------------------------------------------------------------------------------------
 " coc.nvim scroll popup definition
@@ -213,7 +213,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
