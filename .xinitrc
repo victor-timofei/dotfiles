@@ -54,6 +54,9 @@ picom --experimental-backends &
 # Start xscreensaver
 xscreensaver --no-splash &
 
+# Load keybinds
+xbindkeys
+
 # Start dwmblocks
 dwmblocks &
 
