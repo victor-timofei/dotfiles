@@ -115,13 +115,7 @@ set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 
 " Reload file
-function! MyReload() abort
-    write
-    edit
-    TSBufEnable highlight
-endfunction
-
-nnoremap <leader>r <cmd>call MyReload()<cr>
+nnoremap <leader>r <cmd>update \| edit \| TSBufEnable highlight<cr>
 
 " -------------------------------------------------------------------------------------------------
 "  telescope keymaps
