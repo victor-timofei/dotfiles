@@ -7,7 +7,10 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'tpope/vim-fugitive'
 
+" Colorschemes
+Plug 'markvincze/panda-vim'
 Plug 'NLKNguyen/papercolor-theme'
+
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
