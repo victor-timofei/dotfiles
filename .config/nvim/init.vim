@@ -37,10 +37,10 @@ let mapleader=" "
 "
 set t_Co=256 "required for urxvt
 set background=dark "dark or light
-colorscheme PaperColor
+colorscheme panda
 
 let g:lightline = {
-	\ 'colorscheme': 'onehalfdark',
+	\ 'colorscheme': 'ayu_dark',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
