@@ -39,6 +39,7 @@ fi
 
 xset -dpms         # disable DPMS (Energy Star) features.
 xset s noblank     # don't blank the video device
+xset s off         # disable screensaver
 
 # Try to use the same scaling as my 4K monitor on my 768 laptop monitor
 xrandr --dpi 150 \
@@ -52,10 +53,10 @@ nitrogen  --restore &
 picom --experimental-backends &
 
 # Start xscreensaver
-xscreensaver --no-splash &
+#xscreensaver --no-splash &
 
 # Load keybinds
-xbindkeys
+#xbindkeys
 
 # Start dwmblocks
 dwmblocks &
