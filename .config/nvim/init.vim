@@ -40,7 +40,7 @@ let mapleader=" "
 "
 set t_Co=256 "required for urxvt
 set background=dark "dark or light
-colorscheme panda
+colorscheme PaperColor
 
 let g:lightline = {
 	\ 'colorscheme': 'ayu_dark',
