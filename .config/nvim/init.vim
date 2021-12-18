@@ -11,6 +11,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'markvincze/panda-vim'
 Plug 'NLKNguyen/papercolor-theme'
 
+" BQN
+Plug 'mlochbaum/BQN', {'rtp': 'editors/vim'}
+
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
