@@ -146,7 +146,7 @@ alias ip="ip -c"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # For dotfiles source control
-alias git-df='/usr/bin/git --git-dir=/home/vtimofei/.mydotfiles/ --work-tree=/home/vtimofei'
+alias git-df='git --git-dir=/home/vtimofei/.mydotfiles/ --work-tree=/home/vtimofei'
 
 # Please use this
 alias please='sudo'
