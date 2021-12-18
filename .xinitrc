@@ -63,7 +63,10 @@ dwmblocks &
 
 # Export some paths here that need to be picked up by
 # the dmenu
-export PATH=$PATH:/home/vtimofei/firefox
+source ~/.config/path
+
+# Disable the laptop keyboard
+# sleep 5; /home/vtimofei/scripts/laptopkb-disable &
 
 # Finally exec my window manager
 exec dwm

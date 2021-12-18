@@ -132,27 +132,8 @@ bindkey -M menuselect 'down' vi-down-line-or-history
 bindkey -M menuselect 'up' vi-up-line-or-history
 bindkey -M menuselect 'right' vi-forward-char
 
-# my executables
-export PATH=/home/vtimofei/scripts:$PATH
-export PATH=/home/vtimofei/bin:$PATH
-export PATH=/home/vtimofei/.local/bin:$PATH
+source ~/.config/path
 
-# go env
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=/home/vtimofei/go
-export GOBIN=${GOPATH}/bin
-export PATH=$GOBIN:$PATH
-
-# rust env
-export PATH=/home/vtimofei/.cargo/bin:$PATH
-
-# k8s dev
-export k8s_working_dir="${GOPATH}/src/k8s.io"
-export user="victor-timofei"
-export PATH="/home/vtimofei/go/src/k8s.io/kubernetes/third_party/etcd:${PATH}"
-export K8S_PATH="$k8s_working_dir/kubernetes"
-
-export PATH="/var/lib/snapd/snap/bin:${PATH}"
 alias chrome="google-chrome-stable </dev/null &>/dev/null &"
 
 alias ls="exa"
